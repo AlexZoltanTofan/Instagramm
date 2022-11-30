@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts.css" />
+  </head>
+  <body onload="render(); renderFollowers()">
+    <header>
+      <i>Instagramm</i>
+      <div class="searchBar">
+        <input type="text" placeholder="suchen" />
+      </div>
+      <div class="iconsHeader">
+        <img class="iconHeader" src="icons/home-7-48.png" />
+        <img class="iconHeader" src="icons/send.png" />
+        <img class="iconHeader" src="icons/plus-5-48.png#" />
+        <img class="iconHeader" src="icons/heart.png" />
+        <img class="iconProfil" src="icons/IMG_8854.jpg" />
+      </div>
+    </header>
+    <div class="contentBg">
+      <div id="content"></div>
+      <div id="rightUser" class="rightUser">
+        <div class="userBg">
+          <img class="iconPeople" src="icons/IMG_8854.jpg" />
+          <span>alex_munich</span>
+          <span class="textBlue">Wechseln</span>
+        </div>
+        <div class="userBg">
+          <p>Vorschäge für dich</p>
+          <b class="textSuggestions">Alle ansehen</b>
+        </div>
+        <div id="followers"></div>
+      </div>
+    </div>
+  </body>
+</html>
